@@ -32,6 +32,12 @@ namespace BetterDecorator
 
             return result;
         }
+        /// <summary>
+        /// This method receives the arguments to decorate
+        /// </summary>
+        /// <param name="args">
+        /// This are the arguments that the method receives
+        /// </param>
         static void Main(string[] args)
         {
             char arg2 = char.Parse(args[1]);
