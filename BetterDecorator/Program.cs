@@ -7,6 +7,20 @@ namespace BetterDecorator
 {
     class Program
     {
+        /// <summary>
+        /// This method reads a string, a char and a int and return the string
+        /// between int times the char given
+        /// </summary>
+        /// <param name="s">
+        /// the main string
+        /// </param>
+        /// <param name="dec">
+        /// char that decorates
+        /// </param>
+        /// <param name="it">
+        /// how many times the char appears
+        /// </param>
+        /// <returns></returns>
         private static string Decor(string s, char dec, int it)
         {
             string result = s;
