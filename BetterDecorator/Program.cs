@@ -33,6 +33,14 @@ namespace BetterDecorator
             return result;
         }
         /// <summary>
+        /// This method is used when the user does not input any arguments
+        /// </summary>
+        /// <returns></returns>
+        private static string Decor()
+        {
+            return Decor("User did not specify args!", '=', 3);
+        }
+        /// <summary>
         /// This method receives the arguments to decorate
         /// </summary>
         /// <param name="args">
@@ -40,10 +48,17 @@ namespace BetterDecorator
         /// </param>
         static void Main(string[] args)
         {
-            char arg2 = char.Parse(args[1]);
-            int arg3 = int.Parse(args[2]);
+            if (args.Length == 0)
+            {
+                Console.WriteLine(Decor());
+            }
+            else
+            {
+                char arg2 = char.Parse(args[1]);
+                int arg3 = int.Parse(args[2]);
 
-            Console.WriteLine(Decor(args[0], arg2, arg3));
+                Console.WriteLine(Decor(args[0], arg2, arg3));
+            }
         }
     }
 }
