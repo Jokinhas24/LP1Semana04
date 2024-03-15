@@ -5,6 +5,14 @@ namespace Special
 {
     class Program
     {
+        /// <summary>
+        /// This method receives a set number then return the n-th of the
+        /// special sequence
+        /// </summary>
+        /// <param name="n">
+        /// Number of the special sequence
+        /// </param>
+        /// <returns></returns>
         private static int GetSpecial(int n)
         {
             int result = 0;
@@ -23,7 +31,12 @@ namespace Special
             }
 
             return result;
-        }
+        }    
+        /// <summary>
+        /// This method is the main method, it starts the code, converts the
+        /// string into a integer then runs the other method
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             Console.Write("Insert n-th number of the special sequence: ");
