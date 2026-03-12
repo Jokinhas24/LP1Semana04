@@ -27,7 +27,7 @@ namespace BetterDecorador
         /// <param name="s"> Decorated string. </param>
         /// <param name="dec"> Char that decorates. </param>
         /// <param name="it"> How many times the char is repeated. </param>
-        /// <returns></returns>
+        /// <returns> String decorated with the decorators. </returns>
         private static string Decor(string s, char dec, int it)
         {
             string decorators = new string(dec, it);
