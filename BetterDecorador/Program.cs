@@ -40,7 +40,7 @@ namespace BetterDecorador
         /// <returns> A warning message using the decorator. </returns>
         private static string Decor()
         {
-            return Decor("User did not specify args!", '=', 3)
+            return Decor("User did not specify args!", '=', 3);
         }
     }
 }
